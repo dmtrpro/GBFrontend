@@ -33,7 +33,7 @@
   color:  #ffffff;
   font-size: 18px;
   text-decoration: none;
-  @include transition(.3s, background-color)
+  @include transition(.3s, background-color);
   &:hover{
     background-color:  rgba(42, 42, 42, 0.35);
     color:  #ffffff;

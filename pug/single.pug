@@ -77,17 +77,4 @@ block content
     section.single-product__featured.featured-items.container
         h2.featured-items__title You may like also
         .featured-items__products-list.products-list.products-list--featured
-            -
-                featured = [
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item1.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item2.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item3.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item4.jpg'}
-                ];
-            for val in featured
-                article.products-list-item
-                    a(href='single.html').products-list-item__link
-                        img(src=val.img alt=val.name).products-list-item__image
-                        h2.products-list-item__name=val.name
-                        .products-list-item__cost.currency=val.cost.toFixed(2)
-                    a(href='cart.html').products-list-item__cart Add to cart
+            +catalog(4)

@@ -80,25 +80,7 @@ block content
                         option(value='9' selected) 09
 
                 .products-catalog__products.products-list.products-list--catalog
-                    -
-                        products = [
-                            {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item1.jpg'},
-                            {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item2.jpg'},
-                            {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item3.jpg'},
-                            {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item4.jpg'},
-                            {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item5.jpg'},
-                            {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item6.jpg'},
-                            {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item7.jpg'},
-                            {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item4.jpg'},
-                            {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item8.jpg'}
-                        ];
-                    for val in products
-                        article.products-list-item
-                            a(href='single.html').products-list-item__link
-                                img(src=val.img alt=val.name).products-list-item__image
-                                h2.products-list-item__name=val.name
-                                .products-list-item__cost.currency=val.cost.toFixed(2)
-                            a(href='cart.html').products-list-item__cart Add to cart
+                    +catalog(9)
 
                 .products-catalog__pager
                     ul.pager

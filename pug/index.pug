@@ -12,7 +12,6 @@ block content
                 h2.main-slider__text--h2= 'of luxerious '
                     span.color-pink fashion
 
-
     .main-categories.container
         -
             categories = [
@@ -33,24 +32,7 @@ block content
         h2.featured-items__title Featured Items
         .featured-items__desc Shop for items based on what we featured in this week
         .featured-items__products-list.products-list.products-list--featured
-            -
-                featured = [
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item1.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item2.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item3.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item4.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item5.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item6.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item7.jpg'},
-                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item8.jpg'}
-                ];
-            for val in featured
-                article.products-list-item
-                    a(href='single.html').products-list-item__link
-                        img(src=val.img alt=val.name).products-list-item__image
-                        h2.products-list-item__name=val.name
-                        .products-list-item__cost.currency=val.cost.toFixed(2)
-                    a(href='cart.html').products-list-item__cart Add to cart
+            +catalog(12)
 
         a(href='products.html').main-featured__button.button-main= 'Browse all products '
             i.fa.fa-long-arrow-right
