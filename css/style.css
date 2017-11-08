@@ -473,7 +473,8 @@ a.logo img {
   justify-content: space-between; }
 
 .mega-menu__col {
-  min-width: 235px; }
+  min-width: 235px;
+  margin: 0 7px; }
 
 .mega-menu__img {
   margin-top: 15px;

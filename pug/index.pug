@@ -16,10 +16,10 @@ block content
     .main-categories.container
         -
             categories = [
-            {name:'Women', desc:'30% Offer', img:'img/offer-women.jpg'},
-            {name:'For men', desc:'Hot deal', img:'img/offer-man.jpg'},
-            {name:'For kids', desc:'New arrivals', img:'img/offer-child.jpg'},
-            {name:'Accessories', desc:'Luxirous & trendy', img:'img/offer-acc.jpg'}
+                {name:'Women', desc:'30% Offer', img:'img/offer-women.jpg'},
+                {name:'For men', desc:'Hot deal', img:'img/offer-man.jpg'},
+                {name:'For kids', desc:'New arrivals', img:'img/offer-child.jpg'},
+                {name:'Accessories', desc:'Luxirous & trendy', img:'img/offer-acc.jpg'}
             ];
         for val in categories
             article.main-categories__block.offer-block
@@ -35,14 +35,14 @@ block content
         .featured-items__products-list.products-list.products-list--featured
             -
                 featured = [
-                {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item1.jpg'},
-                {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item2.jpg'},
-                {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item3.jpg'},
-                {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item4.jpg'},
-                {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item5.jpg'},
-                {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item6.jpg'},
-                {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item7.jpg'},
-                {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item8.jpg'}
+                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item1.jpg'},
+                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item2.jpg'},
+                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item3.jpg'},
+                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item4.jpg'},
+                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item5.jpg'},
+                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item6.jpg'},
+                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item7.jpg'},
+                    {name: 'Mango people t-shirt', cost: 52, img:'img/featured-item8.jpg'}
                 ];
             for val in featured
                 article.products-list-item
@@ -53,13 +53,13 @@ block content
                     a(href='cart.html').products-list-item__cart Add to cart
 
         a(href='products.html').main-featured__button.button-main= 'Browse all products '
-        i.fa.fa-long-arrow-right
+            i.fa.fa-long-arrow-right
     aside.main-offer.container
         -
             offers = [
-            {name:'Free delivery', img:'img/offer-delivery.png', desc:'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'},
-            {name:'Sales & discounts', img:'img/offer-sales.png', desc:'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'},
-            {name:'Quality assurance', img:'img/offer-quality.png', desc:'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'}
+                {name:'Free delivery', img:'img/offer-delivery.png', desc:'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'},
+                {name:'Sales & discounts', img:'img/offer-sales.png', desc:'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'},
+                {name:'Quality assurance', img:'img/offer-quality.png', desc:'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.'}
             ];
         a(href='').main-offer__link
             img(src='img/footer-banner.jpg' alt='Offer').main-offer__image
