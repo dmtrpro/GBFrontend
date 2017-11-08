@@ -14,6 +14,10 @@ $width-container: 1200px;
   content: '$';
 }
 
+input, button {
+  outline: none;
+}
+
 @import "_mixins.scss";
 @import "_main.scss";
 @import "_header.scss";
