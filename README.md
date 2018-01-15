@@ -5,7 +5,7 @@ Site for course of [GeekBrains's](https://geekbrains.ru/go/aWdy4K) GeekUniversit
 https://drive.google.com/drive/u/0/folders/0B0l8jmNN0HJEd1prWS1Eb29IQTQ
 
 ## Site:
-https://dmtrpro.github.io/GBFrontend/
+https://dmtrpro.github.io/gb-html/
 
 ## TODO:
 * Finish adaptivity
